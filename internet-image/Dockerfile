@@ -1,5 +1,7 @@
 FROM centos
 
+ARG user=appuser
+
 RUN yum install -y httpd unzip
 
 ENV HTML=beginner-html-site-styled
