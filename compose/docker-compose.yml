@@ -1,7 +1,8 @@
 version: '3'
 services: 
-  web: 
-    container_name: nginx_compose
+  db:
+    image: mysql
+    container_name: mysql
     ports: 
-      - "8080:80"
-    image: nginx:alpine
+      - "3306:3306"
+    env_file: .env 
