@@ -1,8 +1,6 @@
 version: '3'
-services: 
-  db:
-    image: mysql
-    container_name: mysql
-    ports: 
-      - "3306:3306"
-    env_file: .env 
+services:
+  something:
+    image: centos
+    container_name: centos
+    command: python -m SimpleHTTPServer
